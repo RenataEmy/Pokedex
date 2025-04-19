@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 h1{
@@ -16,16 +18,45 @@ h1{
 
 
 .pokemons{
-    list-style: none;
     padding: 0;
     margin: 0;
     color: white;
 }
 
-.pokemons li{
+.pokemon-list{
+    display: flex;
+    flex-direction: column;
     margin: .5rem;
-    padding: 2rem 1rem;
-    background-color: #14A06F;
+    padding: 1rem;
     border-radius: 1rem;
+    background-color: #49D0B0;    
+}
+
+img{
+    max-width: 100%;
     height: 100px;
+}
+
+.number{
+    color: black;
+    opacity: .3;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ol{
+    padding: 0;
+}
+
+.type{
+    background-color: #61E1CA;
+    color: white;
+    padding: .20rem .5rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
 }
